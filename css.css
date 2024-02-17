@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web';
+}
+li{
+    list-style: none;
+}
+/* fia nev */
+.first-nevbar{
+    height: 3.125rem;
+}
+.logo{
+    max-width: 4rem;
+}
+.logo img{
+    width: 2.5rem;
+}
+.logo2 img{
+    width: 5rem;
+}
+
+.account{
+    background-color: #1f1f27;
+    width: 6.20rem;
+    height: 2.5rem;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: none;
+    transition: 1s ;
+}
+.subscribe{
+    width: 5.9375rem;
+    height: 2.5rem;
+    background-color: #e10501;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: none;
+    transition: .5s;
+}
+
+/* fia nav */
+/* formula1 nav */
+a{
+    text-decoration: none;
+}
+.formula1 a{
+    color: white;
+}
+.formula1 li{
+    display: inline-block; 
+    transition: .1s;  
+}
+
+.users{
+    width: 3.4375rem;
+    height: 2.8125rem;
+    background-color: #1f1f27;
+}
+/* formual1 nav */
+
+
+
+/* formula one home page */
+.bg-img{
+    width: 100%;
+    border-top-right-radius: 25px;
+    border: .8rem solid #e10501;
+    border-left: 0;
+    border-bottom: 0;
+}
+.card-text{
+    font-size: 11px;
+    color: #e10501;
+    margin: 0;
+}
+.right-col .card-body, .more-news .card-body,.bg-img1 .card-body{
+    border: 1px solid gainsboro;
+    border-bottom-right-radius: 1rem;
+    border-top: 0;
+    border-left: 0;
+}
+.more{
+    background-color: #e10501;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    transition: .5s;
+}
+.more:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid #e10501;
+}  
+.more-news li:hover .card-body,.bg-img1:hover .card-body{
+    border: 1px solid #e10501;
+    border-bottom-right-radius: 1rem;
+    border-top: 0;
+    border-left: 0;
+}
+/* formula one home page */
+
+@media (max-width: 576px){
+    .purpleBlur{
+        width:100%;
+        height: 40%;
+        position: absolute;
+        top: 62px;
+        background-image: linear-gradient(360deg,#501d83 0,#501d83 0,rgba(80,29,131,0) 68.36%,rgba(80,29,131,0) 100%);
+    }
+}
+@media (min-width: 576px){
+    .imgbox{
+        width: 50%;
+        order: 2;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        overflow: hidden;
+    }
+    .textbox{
+        width: 50%;
+    }
+    .purpleBlur{
+        width:40%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        background-image: linear-gradient(90deg,#501d83 0,#501d83 0,rgba(80,29,131,0) 68.36%,rgba(80,29,131,0) 100%);
+    }
+}
+
+@media (width < 768px){
+    .f1logo img{
+        width: 5rem;
+    }
+    .formula1{
+        height: 3.4375rem !important;
+    }
+    .users{
+        width: 2.75rem;
+        height: 2.125rem;
+    }
+    .more-news img{
+        display: none;
+    }
+    .more-news li{
+        width: 100%;
+    } 
+}
+@media (min-width: 768px) {
+    .bg-img img,.right-col .col-6 img, .sd img, .more-news img,.bg-img1 img{
+        transition: transform .3s ease-in-out;
+    }
+    .bg-img:hover img,.right-col .col-6:hover img,.sd:hover img, .more-news li:hover img,.bg-img1:hover img{
+        transform: scale(1.1);
+    }
+    .bg-img:hover .card-title{
+        text-decoration: underline;
+    }
+    .col-6:hover .card-body{
+        border: 1px solid #e10501;
+        border-bottom-right-radius: 1rem;
+        border-top: 0;
+        border-left: 0;
+    }
+    .more-news li:nth-child(3) img, .more-news li:nth-child(4) img{
+        display: none;
+    }
+    .more-news li{
+        width: 47%;
+    }
+}
+@media (width> 768px) and (width<1024px){
+    #side-items{
+        width: 47%;
+    }
+    .sidebar li:nth-child(2n){
+        float: right;
+    } 
+}
+@media (min-width: 992px){
+    .bg-img1{
+        width: 50%;
+        padding-right: 10px;
+        margin-bottom: 25px;
+    }
+    .more-news{
+        position: absolute;
+        right: 0;
+        top: 1.6%;
+    }
+    .more-news li{
+        width: 45%;
+    }
+}
+@media (width < 1024px){
+    .first-nevbar{
+        display: none !important;
+    }
+    .f1-navbar,.sidebar{
+        display: none;
+    }
+    .formula1{
+        height: 4rem;
+        display: flex inline;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    #f1-bar{
+        font-size: 1.4rem;
+    }
+    .f1-nav{
+        justify-content: center;
+    }
+    #side-items{
+        height: 2.75rem;
+        border-bottom-right-radius: 15px;
+        border: 1px solid gainsboro;
+        border-top: 0;
+        border-left: 0;
+        list-style: none;
+        margin: 0px 15px 10px 15px;
+        padding-top: 9px;
+    }
+    #side-items a{
+        color: white;
+        text-decoration: none;
+        font-size: large;
+    }
+    #side-items i{
+        display: none;
+    }
+    #side-items i[id=i]{
+        display: inline;
+        font-size: small;
+        float: right;
+        margin-right: 15px;
+    }
+    .blur{
+       width: 100%;
+       height: 100vh;
+       background-color: #15151E80;
+       display: block; 
+       position: fixed;
+       top: 0;
+       z-index: 99;
+    }
+    .account,.subscribe{
+        width: 90%;
+        margin: 1rem;
+    }
+    .side-bar2 #side-items a{
+        color: black;
+        font-size: small;
+    }
+    .side-bar3 #side-items span,.side-bar3 li:first-child{
+        display: none;
+    }
+    .side-bar3 #side-items img{
+        width: 4rem;
+    }
+    .sidebar.open{
+        display:block;
+    }
+    .dropDownManu,.dropDownManu1,.dropDownManu2,.dropDownManu3,.dropDownManu4,.dropDownManu5{
+        display: none;
+    }
+}
+@media (width >= 1024px){
+    .formula1{
+        height: 4.438rem;
+    }
+
+    .first-nevbar li{
+        list-style: none;
+        display: inline-block;
+        padding-top: 0.7rem;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        font-size: .9rem;
+    }
+    .navbar-items2{
+        margin-left: auto;
+    }
+    .navbar2 a{
+        text-decoration: none;
+        color: black;
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+    .logo2{
+        width: 7rem;
+        height: 1.5rem;
+        border-right: 0.5px solid black;
+        border-left: 0.5px solid black;
+        margin-top: 0.8rem;
+    }
+    .subscribe:hover{
+        border: 2.5px solid #e10501;
+        background-color: white;
+        color: black ;
+    }
+    .nav_item2:hover{
+        text-decoration-line: underline;
+        text-decoration-color: #e10501;
+    }
+    .nav_item2:hover a{
+        color: #e10501;
+    }
+    .f1-link{
+        height: 4.438rem;
+        margin: 0;
+        padding-top: 1.5rem;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        transition: 0.1s;
+    }
+    .f1-link:hover{
+        background-color: #1f1f27;
+    }
+    .formula1 i{
+        font-size:x-small;
+    }
+    
+    #f1-bar,.users{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    #i{
+        display: none;
+    }
+    .account:hover{
+        opacity: .8;
+    }
+    .navbar img{
+        display: none;
+    }
+    .right-col .card-body{
+        height: 8rem;
+    }
+    .topics{
+        max-width: 30%;
+        height: 7.5rem;
+        border-radius: 10px;
+        background-color: #e10501;
+        margin-right: 15px;
+        border: 1px solid gainsboro;
+        background-position: center;
+        background-size: cover;
+        transition: .3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .topics:hover{
+        border: 1px solid #e10501;
+    }
+    .col-9 h4{
+        color: white;
+        text-align: center;
+        transition: .3s;
+    }
+    .topics:hover h4{
+        font-weight: bold;
+    }
+    .f1driver ul{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       height: 350px;
+    }
+    .f1driver li{
+        height: 40px;
+        width: 20%;
+        border: 1px solid gainsboro;
+        border-bottom-right-radius: 8px;
+        border-top: 0;
+        border-left: 0;
+        align-self: flex-start;
+        padding: 0 15px 10px 0;
+        margin: 20px 0 0 20px;
+        position: relative;
+        transition: .2s;
+    }
+    .f1driver li:nth-child(1),.f1driver li:nth-child(2),.f1driver li:nth-child(3),.f1driver li:nth-child(4),.f1driver li:nth-child(5){
+        margin-left: 0;
+    }
+    .f1driver li i{
+        position: absolute;
+        right: 20px;
+        bottom: 17px;
+    }
+    .driverscolor{
+        display: inline-flex;
+        width: 5px;
+        height: 12.5px;
+        margin-right:10px;
+    }
+    .f1teams ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 400px;
+    }
+    .f1teams li{
+        height: 100px;
+        width: 21%;
+        border: 1px solid gainsboro;
+        border-bottom-right-radius: 8px;
+        border-top: 0;
+        border-left: 0;
+        align-self: flex-start;
+        padding: 0 15px 10px 0;
+        margin: 20px 0 0 20px;
+        position: relative;
+        transition: .2s;
+    }
+    .f1teams img{
+        width: 100%;
+        position: relative;
+        z-index: 9;
+    }
+    .teamscolor{
+        display: inline-flex;
+        width: 50px;
+        height: 25px;
+        position: absolute;
+        bottom: 20px;
+        z-index: 0;
+    }
+    .f1teams li:nth-child(1),.f1teams li:nth-child(2),.f1teams li:nth-child(3){
+        margin-left: 0;
+    }
+    .f1teams li i{
+        position: absolute;
+        right: 15px;
+    }
+    .f1driver li:nth-child(1):hover, .f1driver li:nth-child(16):hover,.f1teams li:nth-child(10):hover{
+        border: 1.5px solid #37BEDD; 
+        border-top: 0; 
+        border-left: 0;
+    }
+    .f1driver li:nth-child(2):hover, .f1driver li:nth-child(17):hover,.f1teams li:nth-child(2):hover{
+        border: 1.5px solid #358C75; 
+        border-top: 0; 
+        border-left: 0;
+    }
+    .f1driver li:nth-child(3):hover, .f1driver li:nth-child(20):hover,.f1teams li:nth-child(5):hover{
+        border: 1.5px solid #00E700; 
+        border-top: 0; 
+        border-left: 0;
+    }
+    .f1driver li:nth-child(4):hover, .f1driver li:nth-child(10):hover,.f1teams li:nth-child(1):hover{
+        border: 1.5px solid #2293D1; 
+        border-top: 0; 
+        border-left: 0;
+    }
+    .f1driver li:nth-child(5):hover, .f1driver li:nth-child(14):hover,.f1teams li:nth-child(7):hover{
+        border: 1.5px solid #6BD3BE; 
+        border-top: 0; 
+        border-left: 0;
+    }
+    .f1driver li:nth-child(6):hover, .f1driver li:nth-child(8):hover,.f1teams li:nth-child(4):hover{
+        border: 1.5px solid #B6BABD; 
+        border-top: 0; 
+        border-left: 0;
+    }
+    .f1driver li:nth-child(7):hover, .f1driver li:nth-child(15):hover,.f1teams li:nth-child(3):hover{
+        border: 1.5px solid #F91436; 
+        border-top: 0; 
+        border-left: 0;
+    }
+    .f1driver li:nth-child(9):hover, .f1driver li:nth-child(12):hover,.f1teams li:nth-child(6):hover{
+        border: 1.5px solid #F58021; 
+        border-top: 0; 
+        border-left: 0;
+    }
+    .f1driver li:nth-child(11):hover, .f1driver li:nth-child(19):hover,.f1teams li:nth-child(9):hover{
+        border: 1.5px solid #3671C6; 
+        border-top: 0; 
+        border-left: 0;
+    }
+    .f1driver li:nth-child(13):hover, .f1driver li:nth-child(18):hover,.f1teams li:nth-child(8):hover{
+        border: 1.5px solid #5E8FAA; 
+        border-top: 0; 
+        border-left: 0;
+    }
+    .dropDownManu,.dropDownManu1,.dropDownManu2,.dropDownManu3,.dropDownManu4,.dropDownManu5{
+        background-color: #1f1f27; 
+        border-bottom: 2px solid #e10501;
+        display: none;
+    }
+    .nothing{
+        background-image: url(image/plus-x2.avif);
+        background-repeat: repeat;
+        height: 48.25%;
+        background-size: 8px;
+        border-right: .8rem solid #e10501;
+        overflow: hidden;
+    }
+}
+
+@media (width < 1200px){
+    li{
+        margin-left: .9375rem;
+    }
+    .first-nevbar{
+        margin-right: 0;
+        margin-left: 0;
+    }
+ }
+
+ @media (min-width: 1200px){
+    li{
+        margin-left: 1.5rem;
+    }
+    .formula1 a{
+        font-size: 1.1rem;
+    }
+    .textbox{
+        padding-top: 3.7% !important;
+    }
+    .bg-img1{
+        margin-bottom: 0px;
+    }
+ }
+
+ @media (min-width: 1400px){
+    .right-col .card-body{
+        height: 105px;
+    }
+    .textbox{
+        padding-top: 5% !important;
+    }
+ }
